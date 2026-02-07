@@ -32,8 +32,8 @@ public class HelloController {
 
     static String getGreeting(LocalTime time) {
         int hour = time.getHour();
-        if (hour >= 18)  return "Bonsoir"
-        else if (hour >= 11) return "Bonjour"
+        if (hour >= 18)  return "Bonsoir";
+        else if (hour >= 11) return "Bonjour";
         else return "Bon matin";
     }
 
