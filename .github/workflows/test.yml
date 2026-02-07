@@ -39,7 +39,7 @@ jobs:
           cache: 'maven'
 
       - name: Build
-        run: mvn clean install -pl dao,ui-ngx -DskipTests
+        run: mvn clean install -pl common/data,common/util -DskipTests
 
       - name: Test
-        run: mvn test -pl dao,ui-ngx
+        run: mvn test -pl common/data,common/util
