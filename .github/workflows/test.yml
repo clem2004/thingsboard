@@ -36,7 +36,7 @@ jobs:
           cache: 'maven'
 
       - name: Build
-        run: mvn clean install -DskipTests
+        run: mvn clean install -pl common,rest-client -DskipTests
 
       - name: Test
         run: mvn test -pl common,rest-client
